@@ -1,0 +1,300 @@
+*{
+    font-family: 'Lato', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /*border: solid black 1px;*/
+}
+body{
+    background-color: #f3f0ff;
+}
+header,footer{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style: none;
+}
+
+/*   ////////////////////////////////////////////
+////////////////////////////////////////////////*/
+
+header{
+    background-image:url('C:/Users/JONAS/Documents/MouraMolas/img/nav-bg.JPG');
+    background-repeat: no-repeat; 
+    color: white;
+    height: 20 rem;
+    text-align: center;
+}
+.header-filter{
+    height: 200px;
+   /* background-color: rgba(104, 118, 243,0.5)/*#6876f3,0.4*/;
+    filter:b;
+}
+    
+
+nav{
+    /*display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;*/
+    display: block;
+    background-color: #6876f3;
+}
+
+
+/*--------------------------------------------------------------
+-----------Resolver esse dilema do link e list item com js------
+----------------------------------------------------------------*/
+nav ul{
+display: flex;
+height: 70px;
+align-items: center;
+}
+
+nav ul li {
+    width: 20%;
+    flex: 1;
+    text-align: center;
+    font-size: 22px;
+    /*margin: 5px;*/
+    height:70px;
+    padding:20px 0 20px 0;    
+    
+    
+}
+nav ul li a{
+    font-family: 'Arimo', sans-serif;
+    color:#fff;
+}
+
+nav ul li:hover{
+    color:#00f;
+    cursor:pointer;
+    background-color:#fff;
+}
+nav ul li a:hover{
+    background-color:#fff;
+    color:#00f;
+    cursor:pointer;
+
+    /*---------------------------------------------------------------
+    -----------------------------------------------------------------
+    -----------------------------------------------------------------*/
+}
+.barra{
+    height: 50px;
+    border-radius: 40px;
+    border-style: none;
+    margin: 2px;    
+    font-size:18px;
+    font-family: 'Arimo', sans-serif;
+    padding-left:10px;
+}
+.button{
+    height:40px;
+    width:40px;
+    border-radius:20px;
+    border-style:none;
+    background-color:#fff;
+    cursor:pointer;    
+    font-family: 'Arimo', sans-serif;
+}
+
+
+/*                 The main content now               */
+
+.main{
+    display: flex;
+    background-color: seagreen;
+    /*flex-direction: column;
+    align-items: center;
+    */
+
+}
+
+section{
+      margin: 5px;
+      flex: 1;
+      padding: 20px; 
+      background-color: red;
+      width: 500px;
+}
+section ul{
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    
+    flex-wrap: wrap;
+    -webkit-flex-wrap:wrap;
+    -moz-flex-wrap:wrap;
+    background-color: salmon;
+    
+    /*justify-content: center;*/
+}
+
+section ul li{
+    flex: 1;
+    height: 400px;
+    width: 60%;
+    margin: 15px 30px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color:blue;
+}
+
+.portfolio{
+    width: 170px;
+    height: 60%;
+    margin-top: 10px;
+    border-radius: 5px;   
+    border: grey solid 1px;
+}
+
+section ul li p{
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px; 
+}
+.preco{
+    color: red;
+    font-family: 'Arimo', sans-serif;
+    font-size:25px;
+}
+
+
+/*                     The Aside style now    */
+
+
+aside{
+    width: 30%;
+    background-color:yellow;
+    margin: 5px;
+    text-align: center;
+    /*flex: 1;*/   
+}
+
+
+/*                 The frete style now  */
+
+.frete{
+    background-color:salmon;
+    height:150px;
+    text-align:center;
+
+}
+.frete p{
+font-family: 'Arimo', sans-serif;
+}
+/*.frete-form{
+
+}*/
+.cep-text{
+margin-top:15px;
+font-family: 'Arimo', sans-serif;
+height:30px;
+border-radius:15px;
+border-style:none;
+padding-left:10px;
+}
+
+
+
+/* The ads style now  */
+
+
+
+.ads{
+    width: 98%;
+    
+}
+
+.ads img{
+    border: grey solid 1px;
+    width: 90%;
+    height: 90%;
+}
+
+/* THE FOOTER STYLE NOW*/
+
+footer{
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /*background-color: turquoise;*/
+    text-align: center;
+}
+.footer-white-text{
+    width: 50%
+    
+}
+.footer-filter{
+    background-color: rgba(1, 1, 2,0.5)/*#6876f3,0.4*/;
+}
+.contact{
+    width: 50%;
+}
+
+@media  (min-width:0px ) and (max-width: 759px) { 
+
+    .main{
+        display: flex;
+        background-color: seagreen;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }    
+
+    section{
+        width: 80%;
+    }
+    aside{
+        width: 80%;
+        background-color:yellow;
+        margin: 5px;
+        text-align: center;
+        /*flex: 1;*/
+           
+    }
+    header{
+        /*background-color: violet;*/
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        height: 200px;
+        width: 100%;
+    }
+        
+    
+    nav{
+        /*display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;*/
+        display: block;
+        background-color: #6876f3;
+    }
+    
+    nav ul{
+    display: flex;
+    height: 70px;
+    align-items: center;
+    }
+    
+    nav ul li{
+        width: 20%;
+        flex: 1;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color:#fff;
+        font-size: 20px;
+        margin: 5px;    
+    }
+    
+    header h1{
+        font-size: 25px;
+    }
+}
+
+
+

@@ -1,0 +1,164 @@
+@media screen and (max-width: 600px) {
+   
+body{
+    background-color: #f3f0ff;
+}
+
+header{
+    /*background-color: violet;*/
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: 200px;
+    text-align: center;
+}
+    
+
+nav{
+    display: block;
+    background-color: #6876f3;
+}
+
+nav ul{
+display: flex;
+height: 70px;
+align-items: center;
+}
+
+nav ul li{
+    width: 20%;
+    /*flex: 1;*/
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#fff;
+    font-size: 22px;
+    margin: 5px;    
+}
+
+
+/*                 The main content now               */
+
+.main{
+    display: flex;
+    background-color: seagreen;
+    /*flex-direction: column;
+    align-items: center;
+    */
+
+}
+
+section{
+      margin: 5px;
+      flex: 1;
+      padding: 20px; 
+      background-color: red;
+      width: 500px;
+}
+section ul{
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    
+    flex-wrap: wrap;
+    -webkit-flex-wrap:wrap;
+    -moz-flex-wrap:wrap;
+    background-color: salmon;
+    
+    /*justify-content: center;*/
+}
+
+section ul li{
+    flex: 1;
+    height: 300px;
+    width: 60%;
+    margin: 30px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+section ul li img{
+    width: 170px;
+    height: 60%;
+    margin-top: 10px;
+    border-radius: 5px;   
+    border: grey solid 1px;
+}
+
+section ul li p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px; 
+}
+.preco{
+    color: red;
+}
+
+
+/*                     The Aside style now    */
+
+
+aside{
+    width: 30%;
+    background-color:yellow;
+    margin: 5px;
+    text-align: center;
+    /*flex: 1;*/   
+}
+
+
+/*                 The map style now  */
+
+.local{
+
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    
+}
+
+.map{
+    width: 100%;
+    
+}
+
+.map img{
+    height: 90%;
+    width: 90%;
+    border: grey solid 1px;
+}
+
+
+
+/* The ads style now  */
+
+
+
+.ads{
+    width: 98%;
+    
+}
+
+.ads img{
+    border: grey solid 1px;
+    width: 90%;
+    height: 90%;
+}
+
+/* THE FOOTER STYLE NOW*/
+
+footer{
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: turquoise;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer-white-text{
+    width: 50%
+}
+.contact{
+    width: 50%;
+}
+
+}
